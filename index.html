@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-light.png" type="image/x-icon">
+    <title>Our Project</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c56dc282e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid p-5 pb-2">
+            <div class="row">
+                <div class="col-6">
+                    <div class="nav-brand">
+                        <img src="img/logo-light.png" alt="Our Project" class="w-100">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="nav-menu-wrapper d-flex justify-content-end align-items-center gap-3">
+                        <div class="nav-menu">
+                            <span class="d-block">Menu</span>
+                            <span class="d-block">Open</span>
+                        </div>
+                        <div class="nav-menu-icon">
+                            <i class="fa-solid fa-grip-lines"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Services & Portfolios -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-5 fw-normal mb-3">Services & Portfolios</h1>
+                    <a href="" class="btn-custom rounded-pill">Inquiries</a>
+                </div>
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <h4>1</h4>
+                        </div>
+                        <div class="item">
+                            <h4>2</h4>
+                        </div>
+                        <div class="item">
+                            <h4>13</h4>
+                        </div>
+                        <div class="item">
+                            <h4>4</h4>
+                        </div>
+                        <div class="item">
+                            <h4>5</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

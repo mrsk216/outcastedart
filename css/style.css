@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+:root{
+    --body-bg: #F2EEED;
+    --body-text: #000;
+}
+
+body{
+    background-color: var(--body-bg);
+    color: var(--body-text);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-custom{
+    background-color: var(--body-text);
+    color: var(--body-bg);
+    padding: 8px 15px;
+}
+
+/* Header */
+.nav-brand{
+    width: 100px;
+}
+
+.nav-menu-wrapper{
+    height: 30px;
+    overflow-y: hidden;
+}
+
+.nav-menu span{
+    transition: 0.3s;
+    transform: translateY(12px);
+}
+.nav-menu-wrapper:hover .nav-menu span{
+    transform: translateY(-12px);
+}
