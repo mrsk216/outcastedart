@@ -49,26 +49,38 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 mb-5">
                     <h1 class="display-5 fw-normal mb-3">Services & Portfolios</h1>
                     <a href="" class="btn-custom rounded-pill">Inquiries</a>
                 </div>
                 <div class="col-12">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme py-5">
                         <div class="item">
-                            <h4>1</h4>
+                            <div class="item-img mb-3">
+                                <img src="img/portfolio/all-images/Untitled_Artwork.png" alt="">
+                            </div>
+                            <h5>Book Illustration</h5>
+                            <div class="my-3">
+                                <a href="" class="btn-custom rounded-pill">View Portfolio</a>
+                            </div>
                         </div>
                         <div class="item">
-                            <h4>2</h4>
+                            <div class="item-img mb-3">
+                                <img src="img/portfolio/all-images/Illustration (3).png" alt="">
+                            </div>
+                            <h5>Custom Illustrations</h5>
+                            <div class="my-3">
+                                <a href="" class="btn-custom rounded-pill">View Portfolio</a>
+                            </div>
                         </div>
                         <div class="item">
-                            <h4>13</h4>
-                        </div>
-                        <div class="item">
-                            <h4>4</h4>
-                        </div>
-                        <div class="item">
-                            <h4>5</h4>
+                            <div class="item-img mb-3">
+                                <img src="img/portfolio/all-images/Portraits-2.png" alt="">
+                            </div>
+                            <h5>Portraits</h5>
+                            <div class="my-3">
+                                <a href="" class="btn-custom rounded-pill">View Portfolio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,7 +102,7 @@
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
                 loop: true,
-                margin: 10,
+                margin: 30,
                 nav: true,
                 responsive: {
                     0: {
@@ -98,9 +110,6 @@
                     },
                     600: {
                         items: 3
-                    },
-                    1000: {
-                        items: 5
                     }
                 }
             })

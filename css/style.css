@@ -18,6 +18,9 @@ body{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: var(--body-bg);
+}
 
 /* Buttons */
 .btn-custom{
@@ -42,4 +45,29 @@ a{
 }
 .nav-menu-wrapper:hover .nav-menu span{
     transform: translateY(-12px);
+}
+
+/* Portfolio */
+.owl-carousel .item .item-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.owl-carousel .owl-nav.disabled{
+    display: block;
+}
+
+.owl-prev{
+    position: absolute;
+    top: 35%;
+    left: -60px;
+    font-size: 50px !important;
+}
+
+.owl-next{
+    position: absolute;
+    top: 35%;
+    right: -60px;
+    font-size: 50px !important;
 }
