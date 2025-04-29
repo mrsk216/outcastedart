@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -24,7 +26,7 @@
 <body>
     <!-- header -->
     <header>
-        <div class="container-fluid p-5 pb-2">
+        <div class="container-fluid px-5 pt-3 pb-2">
             <div class="row">
                 <div class="col-6">
                     <div class="nav-brand">
@@ -51,7 +53,9 @@
             <div class="row">
                 <div class="col-12 mb-5">
                     <h1 class="display-5 fw-normal mb-3">Services & Portfolios</h1>
-                    <a href="" class="btn-custom rounded-pill">Inquiries</a>
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <a href="" class="btn-custom rounded-pill">Inquiries</a>
+                    </div>
                 </div>
                 <div class="col-12">
                     <div class="owl-carousel owl-theme py-5">
@@ -60,7 +64,7 @@
                                 <img src="img/portfolio/all-images/Untitled_Artwork.png" alt="">
                             </div>
                             <h5>Book Illustration</h5>
-                            <div class="my-3">
+                            <div class="my-3" data-aos="fade-left" data-aos-duration="1000">
                                 <a href="" class="btn-custom rounded-pill">View Portfolio</a>
                             </div>
                         </div>
@@ -69,7 +73,7 @@
                                 <img src="img/portfolio/all-images/Illustration (3).png" alt="">
                             </div>
                             <h5>Custom Illustrations</h5>
-                            <div class="my-3">
+                            <div class="my-3" data-aos="fade-left" data-aos-duration="1000">
                                 <a href="" class="btn-custom rounded-pill">View Portfolio</a>
                             </div>
                         </div>
@@ -78,7 +82,7 @@
                                 <img src="img/portfolio/all-images/Portraits-2.png" alt="">
                             </div>
                             <h5>Portraits</h5>
-                            <div class="my-3">
+                            <div class="my-3" data-aos="fade-left" data-aos-duration="1000">
                                 <a href="" class="btn-custom rounded-pill">View Portfolio</a>
                             </div>
                         </div>
@@ -89,28 +93,91 @@
     </section>
     <!-- Inquiries -->
     <section>
-        <div class="container">
+        <div class="container py-5 my-5">
             <div class="row">
-                <div class="col-6">
-                    <h1>Be Original and STAND OUT.</h1>
-                    <p>The only limit is your imagination</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat fugit explicabo beatae voluptate quibusdam placeat necessitatibus aliquam rerum ratione nesciunt.</p>
-                    <a href="" class="btn-custom rounded-pill">Inquiries</a>
-                </div>
-                <div class="col-6">
+                <div class="col-5 d-flex align-items-center">
                     <div>
-                        <h2><i class="fa-solid fa-palette"></i> 100% Original Artwork</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint hic ratione placeat non, at quisquam repellat neque rem illo vitae!</p>
+                        <h1 class="display-5 fw-normal">Be Original and STAND OUT.</h1>
+                        <p class="py-3" data-aos="fade-up" data-aos-duration="1000">The only limit is your imagination</p>
+                        <p class="pb-3" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Are you looking to hire an Illustrator or custom artist to elevate your brand or business? Outcasted Creations will
+                            provide you with Original Illustrations and designs for all of your creative needs.</p>
+                        <a href="" class="btn-custom rounded-pill" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">Inquiries</a>
                     </div>
-                    <div>
-                        <h2><i class="fa-solid fa-user-plus"></i> Join The Team</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint hic ratione placeat non.</p>
+                </div>
+                <div class="col-7">
+                    <div class="mb-5" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="fw-normal"><i class="fa-solid fa-palette"></i> 100% Original Artwork</h2>
+                        <p class="py-3">We are expanding very fast and I am going to be hiring artists to join the team with that being said I’d like to
+                        say,Currently, every illustration is hand drawn by Julia Cubiz, owner of Outcasted Creations.</p>
+                    </div>
+                    <div class="mb-5" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <h2 class="fw-normal"><i class="fa-solid fa-user-plus"></i> Join The Team</h2>
+                        <p class="py-3">Outcasted Creations is branching out and actively hiring diverse, talented artists to join our team.</p>
                         <a href="" class="btn-custom rounded-pill">Join the team</a>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                        <h2 class="fw-normal"><i class="fa-solid fa-thumbs-up"></i> Unlimited Requests & Revisions</h2>
+                        <p class="py-3">Weather you are looking for commercial illustrations or to add to your art collection Outcasted Creations will create as
+                        many pieces as you desire to fulfill your needs with unlimited revisions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Virtual Tour -->
+    <section id="tour">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-grid justify-content-center align-content-center">
+                    <h1 class="display-5 fw-normal text-white mb-3">Virtual Art Gallery</h1>
+                    <div class="text-center"><a href="" class="btn-outline-custom rounded-pill">Virtual Gallery Tour</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-2 fw-normal text-custom text-center mt-5">ABOUT THE ILLUSTRATOR</h1>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-4">
+                    <img src="img/portfolio/all-images/about-us.jpeg" alt="" class="w-100">
+                </div>
+                <div class="col-8">
+                    <p class="about-p" data-aos="fade-up" data-aos-duration="1000">Since its humble beginnings in 2016, Outcasted Art has been my little corner of the world, a place where creativity
+                    meets spray paint. What started as a hobby, dabbling in spray paint art, gradually grew into so much more. Over the
+                    years, my love for the craft has spilled over into custom guitars, carefully drawn portraits, vibrant murals, and most
+                    recently, playful book illustrations. After seven years of dedication, I'm thrilled to share that I've built this modest
+                    art venture entirely on my own. The journey hasn't always been easy, but every brush stroke and spray has been worth it.
+                    Outcasted Art was never just about me. It was born from a desire to create, to give people a voice through art, and to
+                    find my own voice too. Now, after crafting countless original pieces for folks across the globe, I'm excited to see
+                    Outcasted Art growing in its own way. To every client who has trusted me to bring their vision to life, thank you. Your
+                    faith in my work has not only helped Outcasted Art grow, but it's also brought comfort and stability to my family of
+                    four. We're living a simple, debt-free life, and for that, I'm immensely grateful. As a shy kid, and a bit of an outcast
+                    myself, taking on a leadership role wasn't something I ever imagined. Outcasted Art was a dream, and despite my doubts,
+                    I took the leap. Today, it's my hope that every piece I create tells a story, my story, and the story of every outcast
+                    who dared to dream.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between px-5">
+                        <button id="bttop" class="border-0 bg-transparent nav-menu">Back to Top</button>
+                        <p class="text-secondary"><small>Copyright @ Our Project</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Jquery -->
@@ -120,6 +187,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Owl Carousel -->
     <script src="js/owl.carousel.min.js"></script>
     <script>
@@ -139,5 +211,7 @@
             })
         })
     </script>
+    <!-- Custom -->
+    <script src="js/custom.js"></script>
 </body>
 </html>

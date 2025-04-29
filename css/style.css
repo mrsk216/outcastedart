@@ -22,9 +22,25 @@ a:hover{
     color: var(--body-bg);
 }
 
+p,span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+/* Text Color */
+.text-custom{
+    color: tomato;
+}
+
 /* Buttons */
 .btn-custom{
     background-color: var(--body-text);
+    color: var(--body-bg);
+    padding: 8px 15px;
+}
+.btn-outline-custom{
+    border: 1px solid var(--body-text);
+    background: transparent;
     color: var(--body-bg);
     padding: 8px 15px;
 }
@@ -70,4 +86,17 @@ a:hover{
     top: 35%;
     right: -60px;
     font-size: 50px !important;
+}
+
+/* Vitual Gallery tour */
+#tour{
+    width: 100%;
+    height: 100vh;
+    background: #0000004d url(../img/banner-home.jpeg) no-repeat center / cover;
+    background-blend-mode: overlay;
+}
+
+/* About */
+.about-p{
+    line-height: 1.7;
 }
