@@ -10,6 +10,11 @@
     --body-text: #000;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 body{
     background-color: var(--body-bg);
     color: var(--body-text);
@@ -17,6 +22,7 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--body-text);
 }
 a:hover{
     color: var(--body-bg);
@@ -48,11 +54,16 @@ p,span{
 /* Header */
 .nav-brand{
     width: 100px;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-menu-wrapper{
     height: 30px;
     overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .nav-menu span{
@@ -61,6 +72,42 @@ p,span{
 }
 .nav-menu-wrapper:hover .nav-menu span{
     transform: translateY(-12px);
+}
+
+.nav-items-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: #f2eeed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.nav-items{
+    justify-items: center;
+    overflow-y: hidden;
+}
+.nav-items:hover .navbar-link{
+    color: #828282;
+}
+
+.navbar-link{
+    transition: 1s;
+    font-size: 62px;
+    font-weight: 500;
+    width: fit-content;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.navbar-link:hover{
+    color: var(--body-text) !important;
 }
 
 /* Portfolio */
